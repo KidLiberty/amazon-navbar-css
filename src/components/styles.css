@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --hover-border: 1px solid white;
+  --amazon-navy-blue: #131921;
+  --amazon-light-blue: #232f3e;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100px;
+  color: white;
+  background-color: var(--amazon-navy-blue);
+  min-width: 1000px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-belt {
+  display: flex;
+  justify-content: space-between;
+  height: 60%;
+}
+
+.navbar__div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin: 5px 2.5px;
+  border: 1px solid transparent;
+}
+
+.navbar__div:first-child {
+  margin-left: 10px;
+}
+
+.navbar__div:hover {
+  border: var(--hover-border);
+  cursor: pointer;
+  border-radius: 2.5px;
+}
+
+.navbar__logo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar__logo {
+  height: 27.5px;
+}
+
+.navbar__delivery-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1.25;
+  font-size: 14px;
+}
+
+.navbar__delivery-pin {
+  padding-top: 15px;
+  padding-right: 2px;
+}
+
+.navbar__deliver-to {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.navbar__delivery-div-address {
+  font-weight: bold;
+}
+
+.navbar__search-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin: 5px 2.5px;
+  border: 1px solid transparent;
+  flex: 4.5;
+}
+
+.navbar_search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92.5%;
+  width: 95%;
+}
+
+.navbar__search-container:hover {
+  cursor: auto;
+  border: none;
+}
+
+.navbar__dropdown,
+.navbar__submit {
+  border: none;
+  height: 100%;
+}
+
+.navbar__dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 17.5%;
+  border-right: 1px solid rgb(197, 197, 197);
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.navbar__dropdown:hover {
+  cursor: pointer;
+  background-color: rgb(207, 207, 207);
+}
+
+.navbar__input {
+  font-size: 16px;
+  padding-left: 8px;
+  font-weight: bold;
+  border: none;
+  height: 100%;
+  width: 100%;
+}
+
+.navbar__input:focus {
+  outline: none;
+}
+
+.navbar__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  width: 15%;
+  background-color: rgb(241, 178, 95);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.navbar__submit:hover {
+  cursor: pointer;
+  background-color: rgb(226, 163, 80);
+}
+
+.navbar__language-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  flex: 0.5;
+}
+
+.navbar__accounts-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar__accounts-greeting {
+  padding-right: 40px;
+  font-size: 12px;
+}
+
+.navbar__accounts-link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.navbar__returns-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0.75;
+  font-size: 12px;
+}
+
+.navbar__accounts-orders {
+  font-size: 13px;
+}
+
+.navbar__cart-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5;
+  font-size: 2rem;
+  margin-right: 10px;
+}
+
+.navbar-sprite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40%;
+  background-color: var(--amazon-light-blue);
+}
+
+.sprite__options {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 4;
+}
+
+.sprite__div {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  margin: 10px 0px;
+  font-size: 13px;
+  font-weight: bold;
+  border: 1px solid transparent;
+}
+
+.sprite__div:hover {
+  border: var(--hover-border);
+  cursor: pointer;
+  border-radius: 2.5px;
+}
+
+.sprite__div-hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.5;
+}
+
+.sprite__div-hamburger-menu {
+  padding-top: 2.5px;
+}
+
+.sprite__buy-again {
+  flex: 0.75;
+}
+
+.sprite__shopper-toolkit {
+  flex: 1.25;
+}
+
+.sprite__whole-foods {
+  flex: 0.95;
+}
+
+.sprite__health {
+  flex: 1.5;
+}
+
+.sprite__coupons {
+  flex: 0.75;
+}
+
+.sprite__beauty {
+  flex: 1.65;
+}
+
+.sprite__basics {
+  flex: 1.15;
+}
+
+.sprite__div-special {
+}
+
+.sprite__div-special {
+  justify-content: flex-end;
+  padding-right: 10px;
+  flex: 1;
+}
